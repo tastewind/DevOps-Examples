@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group name="jdbc">
+        <property name="db.url" defaultValue="jdbc:mysql://localhost:3306/devops?useUnicode=true&amp;characterEncoding=utf-8" description="数据库连接字符串" />
+        <property name="db.user" defaultValue="root" description="数据库用户名" />
+        <property name="db.password" defaultValue="000000" description="数据库连接密码" />
+    </group>
+    <group name="home">
+        <property name="home.title" defaultValue="销售统计" description="首页标题" />
+    </group>
+    <script>
+        <generate template="application.template" destfile="application.yml"/>
+        <generate template="home.template" destfile="templates/messages/home.html"/>
+    </script>
+</config>
